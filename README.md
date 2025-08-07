@@ -34,7 +34,7 @@ This repository presents the official PyTorch implementation of **CHAOS**, a nov
 
 CHAOS is a modular deep learning framework designed to jointly model temporal dependencies and causal structures in multivariate time series. The architecture begins with a preprocessing pipeline that transforms raw input sequences into patchified embeddings, preserving fine-grained temporal information. These embeddings are refined through a Sequence Enhancer, which applies lightweight attention mechanisms to emphasize relevant patterns. To uncover the directional causal influence among variables, CHAOS computes a transfer entropy-based causality matrix using a novel Fast-pTE algorithm. This dynamic causality graph then informs a Causal Graph Neural Network (CGNN), which propagates information across series using weighted message passing with a 2D-mixing mechanism. The final forecast is produced by aggregating these enriched representations through a projection head. The entire pipeline is differentiable, end-to-end trainable, and achieves state-of-the-art performance on both benchmark and financial datasets.
 
-![model_structure](img\model_structure.png)
+![model_structure](img/model_structure.png)
 
 ---
 
